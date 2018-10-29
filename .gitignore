@@ -3,3 +3,6 @@
 # dependencies
 /node_modules
 /dist
+
+# IMPORTANT: uncomment the line below!
+# .env

@@ -7,8 +7,13 @@ class App extends React.Component {
     this.state = {
       loading: false,
       location: "",
-      weather: null
+      weather: null,
+      error: false
     }
+  }
+
+  handleInpput() {
+    // handle form input here
   }
 
   getWeather() {
@@ -18,7 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        Hello World
+        Hello World!
       </div>
     );
   }
