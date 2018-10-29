@@ -37,6 +37,7 @@ Run `yarn start` to run the development server.
 ## Resources
 
 - [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [Open Weather Map API](https://openweathermap.org/)
 - [React Documentation](https://reactjs.org/docs/hello-world.html)
 
