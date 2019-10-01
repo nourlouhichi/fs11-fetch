@@ -1,34 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: false,
-      location: "",
-      weather: null,
-      error: false
-    }
-  }
-
-  handleInput() {
-    // handle form input here
-  }
-
-  getWeather() {
-    // call Open Weather API
-  }
-
-  render() {
-    return (
-      <div>
-        Hello World!
-      </div>
-    );
-  }
-}
-
-var mountNode = document.getElementById("app");
-ReactDOM.render(<App />, mountNode);
-
+ReactDOM.render(<App />, document.getElementById("root"));

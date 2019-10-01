@@ -23,8 +23,7 @@ Run `yarn start` to run the development server.
 ### 2. Call the Open Weather Map API.
 
 - [ ] Call the Open Weather API from the "getWeather" method.
-  - Get your own configs, and store configs inside the `.env` file in the root level (make sure you import them to the component you are using them in).
-  - IMPORTANT! Make sure you are not committing your `.env` file to Github (add to your `.gitignore` file)
+  - You will need to create an account at [Open Weather Map API](https://openweathermap.org/). You will need your API key to make requests.
   - Use "fetch" within the "getWeather" method and call the Open Weather API to get the weather based on location.
   - Store weather data in state.
 
@@ -36,9 +35,8 @@ Run `yarn start` to run the development server.
 
 ### 4. Optional: Add an additional button to show a 5-day weather forecast instead.
 
-- [ ] To do this, you'll need to create a second button and make a slightly separate call. 
+- [ ] To do this, you'll need to create a second button and make a slightly separate call.
   - You can use the same method- just slightly alter the URL you are calling with Fetch.
-
 
 ## Resources
 
