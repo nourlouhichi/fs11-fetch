@@ -1,28 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: false,
-      location: "",
-      weather: null,
-      error: false
-    };
-  }
+export default function App() {
+  const [loading, setLoading] = useState(false);
+  const [location, setLocation] = useState("");
+  const [weather, setWeather] = useState(null);
+  const [error, setError] = useState("");
 
-  handleInput() {
-    // handle form input here
-  }
+  const handleChange = e => {
+    // handle key presses
+  };
 
-  getWeather() {
+  const handleSubmit = e => {
+    // handle form submit
+  };
+
+  const getWeather = () => {
     // call Open Weather API
-  }
+  };
 
-  render() {
-    return <div>Hello World!</div>;
-  }
+  return <div>Hello World!</div>;
 }
-
-export default App;
