@@ -12,12 +12,35 @@ export default function App() {
   };
 
   const handleSubmit = e => {
-    // handle form submit
+    e.preventDefault();
+    getWeather();
   };
+  console.log("this is printing");
 
   const getWeather = () => {
     // call Open Weather API
+
+    fetch(
+      "http://api.openweathermap.org/data/2.5/weather?q=London&appid=2a66f21f6cae29aa8bacfb1236e4d109"
+    )
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        this.setState(data);
+      });
   };
 
-  return <div>Hello World!</div>;
+  return (
+    <div>
+      <h1>Hello World!</h1>
+      <form>
+        <label htmlFor="location"> Location I want information on : </label>
+        <input type="text" name="location" />
+        <button type="submit" onClick={() => handleSubmit()}>
+          Get Weather Info
+        </button>
+      </form>
+    </div>
+  );
 }
